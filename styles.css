@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(193, 187,186);
+}
+
+/* -HEADER- */
+header {
+    height: 65px;
+    background-color: rgb(220, 196, 188);
+}
+.logo {
+    float: left;
+    margin: 10px 0px 10px 60px;
+}
+.menu {
+    float: right;
+    margin: 25px 30px 25px 0px;
+}
+.menu i, .menu a {
+    color: rgb(162, 56, 19);
+}
+.menu a {
+    margin-left: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+/* -INDEX.HTML- */
+.template {
+    margin-right: 300px;
+    margin-left: 300px;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+}
+.container {
+    padding-top: 20px;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 312px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+/*Styling image*/
+#image{
+    width: 270px;
+    height: 270px;
+    border: 2px solid white;
+    float: left;
+}
