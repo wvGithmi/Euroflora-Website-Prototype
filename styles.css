@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(193, 187,186);
+    /*background-color: rgb(193, 187,186);*/
 }
 
 /* -HEADER- */
@@ -53,10 +53,29 @@ header {
     position: relative;
     overflow: hidden;
 }
-/*Styling image*/
 #image{
     width: 270px;
     height: 270px;
     border: 2px solid white;
     float: left;
+}
+
+/* -CONTACT.HTML- */
+.form-components {
+    padding-bottom: 40px;
+}
+.form-components {
+    vertical-align: middle;
+}
+.form-components input {
+    float: right;
+}
+.button-styling {
+    display: block; 
+    margin: auto; 
+    background-color: rgb(186, 213, 223); 
+    color: black; 
+    font-size: 15px; 
+    border-radius: 15%; 
+    padding: 8px;
 }
