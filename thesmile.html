@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Smile</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/1444c35fd1.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: rgb(193, 187,186);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="images/logo-small.png">
+            </div>
+
+            <div class="menu">
+                <i class="fa fa-home" aria-hidden="true"><a href="index.html">Home</a></i>
+                <i class="fa fa-envelope" aria-hidden="true"><a href="contact.html">Contact us</a></i>
+                <i class="fa fa-th-large" aria-hidden="true"><a href="theflorist.html">The florist</a></i>
+                <i class="fa fa-camera" aria-hidden="true"><a href="gallery.html">Gallery</a></i>
+                <i class="fa fa-cogs" aria-hidden="true"><a href="order.html">How to order</a></i>
+                <i class="fa fa-phone" aria-hidden="true"><a href="orderbyphone.html">Order by phone</a></i>
+                <i class="fa fa-comment" aria-hidden="true"><a href="chat.html">Chat</a></i>
+            </div>
+        </header>
+
+        <div class="template">
+            <div class="row">
+                <div class="column1">
+                    <img src="images/the smile.jpg" width="400" height="400">
+                    <p>Price (dilivery included)</p>
+                    <hr style="width: 500px; color: black;">
+
+                    <button type="button"><input type="radio" id="standard" name="price" value="standard"> Standard 78.90 &euro;</button>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
+                    <button type="button"><input type="radio" id="deluxe" name="price" value="deluxe"> Deluxe 98.90 &euro;</button>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
+                    <button type="button"><input type="radio" id="premium" name="price" value="premium"> Premium 118.90 &euro;</button>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
+
+                    <div class="total">
+                        <p>Total: </p>
+                    </div>
+                </div>
+                <div class="column2">
+                    <h1 style="font-family: 'Playball', cursive;">The Smile</h1>
+                    <h4>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                        for every occasion. Conveys joy.
+                    </h4>
+
+                    <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i>
+                        Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                        arrangement.<br><br>
+
+                    <hr style="width: 680px; color: black;">
+
+                    <form style="margin-top: 30px;">
+                        <div class="row">
+                            <div class="col1">
+                                <label>Delivery date* </label><br><br><br>
+                                <label>Delivery time</label><br><br><br>
+                                <label>Quantity</label><br><br><br>
+                                <label>Messege<br><span style="font-weight: lighter; font-size: 13px;">Out of ideas? Choose a<br>message!</span></label><br><br><br><br><br>
+                                <label>Signature</label>
+                            </div>
+                            <div class="col2">
+                                <input type="text" id="date" name="date" placeholder="dd/mm/yyyy"><br><br>
+
+                                <input type="radio" id="workday" name="time" value="workday"> Working Day - Free (9 a.m. - 9 p.m.)
+                                <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i><br>
+
+                                <input type="radio" id="holiday" name="time" value="holiday"> Sunday and Public Holidays 4.00 &euro;
+                                <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i><br><br>
+
+                                <input type="text" id="quantity" name="quantity"><br><br>
+
+                                <textarea id="messege" name="messege" col="100" rows="5"></textarea><br>
+                                <span style="font-weight: lighter; font-size: 13px;">250 characters remaining</span><br><br>
+
+                                <input type="text" id="signature" name="signature"><br>
+                                <span style="font-weight: lighter; font-size: 13px;">If the messaged is not signed, it will be delivered anonymously</span><br>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="template">
+            <div class="row">
+                <div class="column1">
+                    <img src="images/the smile.jpg" width="400" height="400">
+                </div>
+                <div class="column2">
+                    <h2>The Smile</h2>
+    
+                    <h4>
+                        Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                        for every occasion. Conveys joy.
+                    </h4>
+    
+                    <p>
+                        Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                        arrangement.
+                    </p>
+                </div>
+            </div>  
+        </div>-->
+
+        
+        
+    </body>
+
+</html>

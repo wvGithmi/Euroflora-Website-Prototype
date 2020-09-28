@@ -7,7 +7,10 @@ body {
 /* -HEADER- */
 header {
     height: 65px;
-    background-color: rgb(220, 196, 188);
+    /*background-color: rgb(220, 196, 188);
+    background: linear-gradient(direction/angle, color1, color2, color3, etc.);*/
+    background: linear-gradient(left, rgb(220, 196, 188),  rgb(255, 255, 255));
+    /*background: linear-gradient(rgb(220, 196, 188) 40%, rgb(255, 255, 255) 20%,  rgb(220, 196, 188) 40%);*/
 }
 .logo {
     float: left;
@@ -27,12 +30,18 @@ header {
     font-weight: lighter;
 }
 
-/* -INDEX.HTML- */
+/* -INDEX.HTML- / -THESMILE.HTML- */
 .template {
     margin-right: 300px;
     margin-left: 300px;
     height: auto;
-    padding: 30px;
+    padding: 40px;
+    background-color: white;
+}
+
+/* -INDEX.HTML- */
+.text {
+    position: absolute;
     background-color: white;
 }
 .container {
@@ -59,6 +68,56 @@ header {
     border: 2px solid white;
     float: left;
 }
+
+/* -THESMILE.HTML- */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1 {
+    width: 40%;
+    height: auto;
+    float: left;
+    background-color: white;
+    margin-right: 5%;
+}
+.column2 {
+    width: 55%;
+    height: auto;
+    float: left;
+    background-color: white
+}
+.column1 button {
+    margin: 5px;
+    width: 450px;
+    height: 35px;
+    text-align: left;
+    border: 1px solid rgb(165, 160, 160);
+    border-radius: 10px;
+    /*background: rgb(151, 144, 144);*/
+}
+.column1 input:active {
+    background-color: rgb(175, 170, 170);
+}
+.column1 i {
+    font-size: 25px;
+    color:rgb(162, 56, 19);
+}
+.col1 {
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: right;
+    margin-right: 5%;
+}
+.col2 {
+    width: 65%%;
+    height: auto;
+    float: left;
+    text-align: left;
+}
+
 
 /* -CONTACT.HTML- */
 .form-components {
