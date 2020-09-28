@@ -6,6 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script>
+            function validateForm() { 
+                var name = document.forms["form"]["name"];               
+                var email = document.forms["form"]["email"];    
+                var phone = document.forms["form"]["number"];  
+                var message = document.forms["form"]["message"];  
+
+                if (name.value == "") { 
+                    window.alert("Please enter your name.");
+                    return false; 
+                } 
+                if (email.value == "") { 
+                    window.alert("Please enter your email address."); 
+                    email.focus(); 
+                    return false; 
+                }    
+                if (phone.value == "") { 
+                    window.alert("Please enter a valid phone number."); 
+                    phone.focus(); 
+                    return false; 
+                } 
+                if (message.value == "") { 
+                    window.alert("Please enter your message."); 
+                    message.focus(); 
+                    return false; 
+                } 
+                return true; 
+        </script>
     </head>
 
     <body>
@@ -21,7 +50,7 @@
         </p>
 
         <div style="margin: 20px 300px 0px 400px">
-            <form action="" method="">
+            <form action="" onsubmit="return validateForm()" method="POST" name="form">
                 <div class="form-components">
                     <label style="margin-right: 15px;">Name*</label>
                     <input type="text" name="name" id="name" size="133">
@@ -54,7 +83,7 @@
                     <input type="file" name="file" id="file" size="100" value="Choose FIle" style="margin-right: 830px;">
                 </div>
 
-                <button class="button-styling"><a href="index.html">Start</a></button>
+                <button type="submit" class="button-styling">Start</button>
             </form>
         </div>
 
