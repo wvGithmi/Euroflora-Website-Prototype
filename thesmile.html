@@ -40,29 +40,59 @@
                     <p>Price (dilivery included)</p>
                     <hr style="width: 500px; color: black;">
 
-                    <button type="button"><input type="radio" id="standard" name="price" value="standard"> Standard 78.90 &euro;</button>
+                    <button type="button"><input type="radio" id="standard" name="price" value="standard" checked> Standard 78.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
-                    <button type="button"><input type="radio" id="deluxe" name="price" value="deluxe"> Deluxe 98.90 &euro;</button>
+                    <button type="button"><input type="radio" id="deluxe" name="price" value="deluxe" checked> Deluxe 98.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
-                    <button type="button"><input type="radio" id="premium" name="price" value="premium"> Premium 118.90 &euro;</button>
+                    <button type="button"><input type="radio" id="premium" name="price" value="premium" checked> Premium 118.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
 
-                    <div class="total">
-                        <p>Total: </p>
-                    </div>
+                    <!--<script type="text/javascript">
+
+                        function selectPriceValue() {
+                            var priceType = $("input:radio[name=price]:checked").val();
+
+                            var priceValue = "";
+
+                                switch (priceType) {
+                                    case 'standard':
+                                        priceValue = "78.90";
+                                        break;
+                                    case 'deluxe':
+                                        priceValue = "98.90";
+                                        break;
+                                    case 'premium':
+                                        priceValue = "118.90";
+                                        break;
+                                    default:
+                                        priceValue = "";
+                                        break;
+                                }
+
+                            document.write(priceValue);
+                        };
+
+                    </script>-->
+
+                    <p class="total">Total: <script>selectPriceValue();</script> &euro; (dilivery included)</p>
+                    <p>The Smile</p>
+
                 </div>
                 <div class="column2">
-                    <h1 style="font-family: 'Playball', cursive;">The Smile</h1>
-                    <h4>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                    <h1 style="font-family: 'Playball', cursive; color: rgba(85, 38, 40);">The Smile</h1>
+                    <h4 style="color: rgba(85, 38, 40);">
+                        Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
                         for every occasion. Conveys joy.
                     </h4>
 
-                    <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i>
-                        Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
-                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
-                        arrangement.<br><br>
+                    <i class="fa fa-exclamation-circle" style="font-size: 20px;" aria-hidden="true"></i>
+                        <span style="color: rgb(107, 102, 102);">
+                            Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                            chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                            arrangement.
+                        </span><br><br>
 
-                    <hr style="width: 680px; color: black;">
+                    <hr style="width: 680px; color: rgb(143, 139, 139);">
 
                     <form style="margin-top: 30px;">
                         <div class="row">
@@ -70,56 +100,38 @@
                                 <label>Delivery date* </label><br><br><br>
                                 <label>Delivery time</label><br><br><br>
                                 <label>Quantity</label><br><br><br>
-                                <label>Messege<br><span style="font-weight: lighter; font-size: 13px;">Out of ideas? Choose a<br>message!</span></label><br><br><br><br><br>
+                                <label>
+                                    Messege<br>
+                                    <span style="font-weight: lighter; font-size: 13px; color: rgba(85, 38, 40);">Out of ideas? Choose a<br>message!</span>
+                                </label><br><br><br><br><br>
                                 <label>Signature</label>
                             </div>
                             <div class="col2">
-                                <input type="text" id="date" name="date" placeholder="dd/mm/yyyy"><br><br>
+                                <input type="text" id="date" name="date" placeholder="dd/mm/yyyy">
+                                <i class="fa fa-calendar" style="font-size: 24px;" aria-hidden="true"></i><br><br>
 
-                                <input type="radio" id="workday" name="time" value="workday"> Working Day - Free (9 a.m. - 9 p.m.)
-                                <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i><br>
+                                <input type="radio" id="workday" name="time" value="workday"> Working Day - Free (9 a.m. - 9 p.m.) 
+                                <i class="fa fa-exclamation-circle" style="font-size: 20px;" aria-hidden="true"></i><br>
 
-                                <input type="radio" id="holiday" name="time" value="holiday"> Sunday and Public Holidays 4.00 &euro;
-                                <i class="fa fa-exclamation-circle" style="font-size: 20px; color:rgb(162, 56, 19);" aria-hidden="true"></i><br><br>
+                                <input type="radio" id="holiday" name="time" value="holiday"> Sunday and Public Holidays 4.00 &euro;  
+                                <i class="fa fa-exclamation-circle" style="font-size: 20px;" aria-hidden="true"></i><br><br>
 
-                                <input type="text" id="quantity" name="quantity"><br><br>
+                                <input type="text" id="quantity" name="quantity" size="6px"><br><br>
 
-                                <textarea id="messege" name="messege" col="100" rows="5"></textarea><br>
-                                <span style="font-weight: lighter; font-size: 13px;">250 characters remaining</span><br><br>
+                                <textarea id="messege" name="messege" cols="55" rows="8"></textarea><br>
+                                <span>250 characters remaining</span><br><br>
 
                                 <input type="text" id="signature" name="signature"><br>
-                                <span style="font-weight: lighter; font-size: 13px;">If the messaged is not signed, it will be delivered anonymously</span><br>
+                                <span>If the messaged is not signed, it will be delivered anonymously</span><br>
+                            
+                                <button type="submit" name="continue" class="btn">Continue</button>
                             </div>
                         </div>
                     </form>
                     
                 </div>
             </div>
-        </div>
-
-        <!--<div class="template">
-            <div class="row">
-                <div class="column1">
-                    <img src="images/the smile.jpg" width="400" height="400">
-                </div>
-                <div class="column2">
-                    <h2>The Smile</h2>
-    
-                    <h4>
-                        Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
-                        for every occasion. Conveys joy.
-                    </h4>
-    
-                    <p>
-                        Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
-                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
-                        arrangement.
-                    </p>
-                </div>
-            </div>  
-        </div>-->
-
-        
+        </div>        
         
     </body>
 

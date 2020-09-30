@@ -7,10 +7,10 @@ body {
 /* -HEADER- */
 header {
     height: 65px;
-    /*background-color: rgb(220, 196, 188);
-    background: linear-gradient(direction/angle, color1, color2, color3, etc.);*/
+    background-color: rgb(220, 196, 188);
+    /*background: linear-gradient(direction/angle, color1, color2, color3, etc.);
     background: linear-gradient(left, rgb(220, 196, 188),  rgb(255, 255, 255));
-    /*background: linear-gradient(rgb(220, 196, 188) 40%, rgb(255, 255, 255) 20%,  rgb(220, 196, 188) 40%);*/
+    background: linear-gradient(rgb(220, 196, 188) 40%, rgb(255, 255, 255) 20%,  rgb(220, 196, 188) 40%);*/
 }
 .logo {
     float: left;
@@ -112,12 +112,31 @@ header {
     margin-right: 5%;
 }
 .col2 {
-    width: 65%%;
+    width: 65%;
     height: auto;
     float: left;
     text-align: left;
 }
-
+.column1 i, .column2 i {
+    color:rgb(162, 56, 19);
+}
+.col2 span {
+    font-weight: lighter; 
+    font-size: 13px; 
+    color: rgb(168, 166, 159);
+}
+.total, .btn {
+    background:rgb(162, 56, 19);
+    color: white;
+    font-weight: bold; 
+    padding: 10px; 
+    border: rgb(162, 56, 19);
+    border-radius: 10px; 
+    margin: 20px;
+}
+.btn {
+    float: right;
+}
 
 /* -CONTACT.HTML- */
 .form-components {
