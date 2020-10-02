@@ -40,42 +40,30 @@
                     <p>Price (dilivery included)</p>
                     <hr style="width: 500px; color: black;">
 
-                    <button type="button"><input type="radio" id="standard" name="price" value="standard" checked> Standard 78.90 &euro;</button>
+                    <button type="button"><input type="radio" id="standard" name="price" value="78.90" required> Standard 78.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
-                    <button type="button"><input type="radio" id="deluxe" name="price" value="deluxe" checked> Deluxe 98.90 &euro;</button>
+                    <button type="button"><input type="radio" id="deluxe" name="price" value="98.90" required> Deluxe 98.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
-                    <button type="button"><input type="radio" id="premium" name="price" value="premium" checked> Premium 118.90 &euro;</button>
+                    <button type="button"><input type="radio" id="premium" name="price" value="118.90" required> Premium 118.90 &euro;</button>
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i><br>
 
-                    <!--<script type="text/javascript">
+                    <script type="text/javascript">
 
                         function selectPriceValue() {
-                            var priceType = $("input:radio[name=price]:checked").val();
+                            var item = document.getElementsByName('price');
 
-                            var priceValue = "";
-
-                                switch (priceType) {
-                                    case 'standard':
-                                        priceValue = "78.90";
-                                        break;
-                                    case 'deluxe':
-                                        priceValue = "98.90";
-                                        break;
-                                    case 'premium':
-                                        priceValue = "118.90";
-                                        break;
-                                    default:
-                                        priceValue = "";
-                                        break;
+                            for(i = 0 ; i < item.length; i++) {
+                                if(item[i].checked) {
+                                    document.getElementById("result1").innerHTML = item[i].value;
+                                    document.getElementById("result2").innerHTML = item[i].value;
                                 }
+                            }
+                        }
 
-                            document.write(priceValue);
-                        };
+                    </script>
 
-                    </script>-->
-
-                    <p class="total">Total: <script>selectPriceValue();</script> &euro; (dilivery included)</p>
-                    <p>The Smile</p>
+                    <p class="total" onclick="selectPriceValue()">Total: <span id="result1"></span> &euro; (dilivery included)</p>
+                    <p>The Smile <span id="result2"></span> &euro;</p>
 
                 </div>
                 <div class="column2">
@@ -107,21 +95,21 @@
                                 <label>Signature</label>
                             </div>
                             <div class="col2">
-                                <input type="text" id="date" name="date" placeholder="dd/mm/yyyy">
+                                <input type="text" id="date" name="date" placeholder="dd/mm/yyyy" required>
                                 <i class="fa fa-calendar" style="font-size: 24px;" aria-hidden="true"></i><br><br>
 
-                                <input type="radio" id="workday" name="time" value="workday"> Working Day - Free (9 a.m. - 9 p.m.) 
+                                <input type="radio" id="workday" name="time" value="workday" required> Working Day - Free (9 a.m. - 9 p.m.) 
                                 <i class="fa fa-exclamation-circle" style="font-size: 20px;" aria-hidden="true"></i><br>
 
-                                <input type="radio" id="holiday" name="time" value="holiday"> Sunday and Public Holidays 4.00 &euro;  
+                                <input type="radio" id="holiday" name="time" value="holiday" required> Sunday and Public Holidays 4.00 &euro;  
                                 <i class="fa fa-exclamation-circle" style="font-size: 20px;" aria-hidden="true"></i><br><br>
 
-                                <input type="text" id="quantity" name="quantity" size="6px"><br><br>
+                                <input type="text" id="quantity" name="quantity" size="6px" required><br><br>
 
                                 <textarea id="messege" name="messege" cols="55" rows="8"></textarea><br>
                                 <span>250 characters remaining</span><br><br>
 
-                                <input type="text" id="signature" name="signature"><br>
+                                <input type="text" id="signature" name="signature" required><br>
                                 <span>If the messaged is not signed, it will be delivered anonymously</span><br>
                             
                                 <button type="submit" name="continue" class="btn">Continue</button>
