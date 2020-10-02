@@ -1,16 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    /*background-color: rgb(193, 187,186);*/
 }
 
 /* -HEADER- */
 header {
     height: 65px;
     background-color: rgb(220, 196, 188);
-    /*background: linear-gradient(direction/angle, color1, color2, color3, etc.);
-    background: linear-gradient(left, rgb(220, 196, 188),  rgb(255, 255, 255));
-    background: linear-gradient(rgb(220, 196, 188) 40%, rgb(255, 255, 255) 20%,  rgb(220, 196, 188) 40%);*/
 }
 .logo {
     float: left;
@@ -191,7 +187,7 @@ header {
     text-align: left;
     border: 1px solid rgb(165, 160, 160);
     border-radius: 10px;
-    /*background: rgb(151, 144, 144);*/
+    background: rgb(187, 185, 185);
 }
 .column1 input:active {
     background-color: rgb(175, 170, 170);
